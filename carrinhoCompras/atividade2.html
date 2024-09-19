@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JS (opcional, caso precise de funcionalidades JS do Bootstrap) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Carrinho de Compras</title>
+</head>
+
+<body>
+    <div class="container mt-4">
+      
+        <header class="cart-header">
+            <h1 class="text-center">Carrinho de Compras </h1>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+              </svg>
+        </header>
+
+        <!-- Seção do Carrinho de Compras -->
+        <section class="mb-4">
+            <ul id="lista-produtos" class="list-group">
+                <!-- Produtos serão listados aqui -->
+            </ul>
+        </section>
+
+        <!-- Seção de Produtos -->
+        <section class="row">
+            <article class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <p class="card-text">ID: 1</p>
+                        <p class="card-text">Nome: Camiseta</p>
+                        <p class="card-text">Valor: R$29.99</p>
+                        <button class="btn btn-primary " onclick="adicionarProduto(1, 'Camiseta', 29.99, 1)">Adicionar
+                            ao Carrinho</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <p class="card-text">ID: 2</p>
+                        <p class="card-text">Nome: Calça Jeans</p>
+                        <p class="card-text">Valor: R$99.90</p>
+                        <button class="btn btn-primary "
+                            onclick="adicionarProduto(2, 'Calça Jeans', 99.90, 1)">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <p class="card-text">ID: 3</p>
+                        <p class="card-text">Nome: Tênis</p>
+                        <p class="card-text">Valor: R$149.90</p>
+                        <button class="btn btn-primary " onclick="adicionarProduto(3, 'Tênis', 149.90, 1)">Adicionar ao
+                            Carrinho</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+     
+        <footer class="text-center mt-4">
+            <p>&copy; 2024 CP4 - Web</p>
+        </footer>
+    </div>
+
+    <script src="./js/atividade2.js"></script>
+</body>
+
+</html>

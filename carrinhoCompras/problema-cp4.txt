@@ -1,0 +1,5 @@
+alterar a função de exibir carrinho (colocar dentro de add carrinho)
+ 
+implementar o botao para remover do carrinho
+ 
+implementar evntos através de um eventListener
